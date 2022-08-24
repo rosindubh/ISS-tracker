@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISS Tracker</title>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>ISS Tracker Under Construction</h1>
+    <nav class="navbar">
+      <button class="home" onclick="document.location=('./index.html')">Clear screen</button>
+      <!-- <button class="nasa-live"onclick="window.open('https://www.nasa.gov/nasalive', '_blank')">NASA Live</button> -->
+      <!-- <button class="crews-expeditions"onclick="window.open('https://www.nasa.gov/mission_pages/station/expeditions/index.html', '_blank')">Crews and Expeditions</button> -->
+      <button onclick="getLocation()">Get Location of ISS</button>
+      <button onclick="loadNames()">People in space now</button>
+    </nav>
+    <h2 id="lat"></h2>
+    <h2 id="lon"></h2>
+    <div id="names"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
